@@ -7,3 +7,4 @@
 # Ignore all tempfiles.
 /tmp/*
 /backend/tmp/*
+/backend/tmp/cache*
