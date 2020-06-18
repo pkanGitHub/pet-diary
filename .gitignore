@@ -5,6 +5,5 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore all tempfiles.
+/log/*
 /tmp/*
-/backend/tmp/*
-/backend/tmp/cache*
