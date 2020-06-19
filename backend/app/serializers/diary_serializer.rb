@@ -1,4 +1,4 @@
 class DiarySerializer
   include FastJsonapi::ObjectSerializer
-  attributes :title, :post, :posted_date, :pet_id
+  attributes :title, :post, :created_at, :pet_id
 end
