@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     end
   end
 
-  gets '/diaries', to: 'diaries#all_diaries'
+  get 'api/v1/diaries', to: 'api/v1/diaries#all_diaries'
 
   # route request that are not for existing path predefined in our API back to our index path
   # get '*path', to: 'pages#index', via: :all

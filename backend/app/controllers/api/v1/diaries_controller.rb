@@ -1,9 +1,15 @@
 class Api::V1::DiariesController < ApplicationController
 
     def index
+        @diaries = Diary.find_by(pet_id: params[:pet_id])
+
+        render json: DiarySerializer.new(@diaries).serialized_json
+    end
+
+    def all_diaries
         @diaries = Diary.all
 
-        render json: PetSerializer.new(@diaries).serialized_json
+        render json: DiarySerializer.new(@diaries).serialized_json
     end
 
     def create
