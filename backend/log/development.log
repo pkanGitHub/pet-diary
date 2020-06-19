@@ -231,3 +231,1774 @@ Migrating to CreateDiaries (20200618232030)
   [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/favicon.ico" for ::1 at 2020-06-19 12:46:44 -0500
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 75)
+
+
+Started GET "/" for ::1 at 2020-06-19 12:48:31 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 47)
+
+
+Started GET "/" for ::1 at 2020-06-19 12:48:33 -0500
+Processing by PagesController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 27)
+
+
+Started GET "/" for ::1 at 2020-06-19 12:48:45 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 74)
+
+
+Started GET "/" for ::1 at 2020-06-19 12:48:49 -0500
+Processing by PagesController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 27)
+
+
+Started GET "/" for ::1 at 2020-06-19 12:48:51 -0500
+Processing by PagesController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 27)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-06-19 12:49:27 -0500
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (Duration: 26.6ms | Allocations: 4300)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 16.8ms | Allocations: 1194)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 52.6ms | Allocations: 7895)
+Completed 200 OK in 82ms (Views: 70.4ms | ActiveRecord: 0.0ms | Allocations: 10646)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 12:49:28 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 29)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-06-19 12:57:01 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [28 times] (Duration: 13.1ms | Allocations: 4009)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 3.7ms | Allocations: 703)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 30.0ms | Allocations: 6712)
+Completed 200 OK in 41ms (Views: 34.1ms | ActiveRecord: 0.0ms | Allocations: 7979)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 12:57:02 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 45)
+
+
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Create (2.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "birth_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Micki"], ["birth_date", "2014-12-01"], ["created_at", "2020-06-19 18:56:00.591125"], ["updated_at", "2020-06-19 18:56:00.591125"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Create (2.1ms)[0m  [1m[32mINSERT INTO "pets" ("name", "birth_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Micki"], ["birth_date", "2014-12-01"], ["created_at", "2020-06-19 18:56:44.097392"], ["updated_at", "2020-06-19 18:56:44.097392"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets" ORDER BY "pets"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/api/v1/pets" for ::1 at 2020-06-19 14:02:21 -0500
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/pets"}
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 74)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-06-19 14:02:33 -0500
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [28 times] (Duration: 35.7ms | Allocations: 4040)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 20.3ms | Allocations: 930)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 114.6ms | Allocations: 7104)
+Completed 200 OK in 145ms (Views: 134.1ms | ActiveRecord: 0.0ms | Allocations: 8984)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:02:34 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 53)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-06-19 14:03:14 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [29 times] (Duration: 24.7ms | Allocations: 4138)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 2.2ms | Allocations: 703)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 44.8ms | Allocations: 6884)
+Completed 200 OK in 54ms (Views: 47.6ms | ActiveRecord: 0.0ms | Allocations: 8143)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:03:14 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 45)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-06-19 14:03:21 -0500
+  
+NameError (uninitialized constant API
+Did you mean?  Api):
+  
+app/controllers/api/v1/pets_controller.rb:1:in `<main>'
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:03:22 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-06-19 14:03:41 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#index as HTML
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 2.1ms | Allocations: 13478)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: diaries.pet_id):
+  
+app/controllers/api/v1/pets_controller.rb:7:in `index'
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:03:42 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 13ms (ActiveRecord: 0.0ms | Allocations: 37)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-06-19 14:05:43 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#index as HTML
+  [1m[36mPet Load (1.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 5.2ms | Allocations: 7702)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: diaries.pet_id):
+  
+app/controllers/api/v1/pets_controller.rb:7:in `index'
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:05:44 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 37)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-06-19 14:13:10 -0500
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.1) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:13:11 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.1) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddPetIdToDiary (20200619191232)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "diaries" ADD "pet_id" integer[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200619191232"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/v1/pets" for ::1 at 2020-06-19 14:13:29 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PetsController#index as HTML
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 65ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 11368)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:13:29 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 42)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePets (20200618225414)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "birth_date" date, "age" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200618225414"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDiaries (20200618232030)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "diaries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "post" varchar, "posted_date" date, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200618232030"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPetIdToDiary (20200619191232)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "diaries" ADD "pet_id" integer[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200619191232"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-06-19 19:17:28.841177"], ["updated_at", "2020-06-19 19:17:28.841177"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Create (0.5ms)[0m  [1m[32mINSERT INTO "pets" ("name", "birth_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Micki"], ["birth_date", "2014-12-01"], ["created_at", "2020-06-19 19:17:36.647914"], ["updated_at", "2020-06-19 19:17:36.647914"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/pets" for ::1 at 2020-06-19 14:17:46 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PetsController#index as HTML
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 65ms (Views: 0.3ms | ActiveRecord: 3.7ms | Allocations: 10405)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:17:46 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 42)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Create (0.5ms)[0m  [1m[32mINSERT INTO "pets" ("name", "birth_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Micki"], ["birth_date", "2014-12-01"], ["created_at", "2020-06-19 19:21:00.323584"], ["updated_at", "2020-06-19 19:21:00.323584"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/rails/info/routes" for ::1 at 2020-06-19 14:21:38 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (Duration: 22.4ms | Allocations: 4301)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 9.3ms | Allocations: 930)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 46.0ms | Allocations: 7465)
+Completed 200 OK in 66ms (Views: 54.7ms | ActiveRecord: 0.0ms | Allocations: 9513)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:21:38 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 67)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-19 14:21:49 -0500
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Api::V1::DiariesController):
+  
+actionpack (6.0.3.1) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:21:49 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 26)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-06-19 14:22:33 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (Duration: 20.2ms | Allocations: 4275)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 3.6ms | Allocations: 703)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 51.5ms | Allocations: 7077)
+Completed 200 OK in 60ms (Views: 54.8ms | ActiveRecord: 0.0ms | Allocations: 8338)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:22:33 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 44)
+
+
+Started GET "/api/v1/diary" for ::1 at 2020-06-19 14:22:55 -0500
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/diary"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 27)
+
+
+Started GET "/api/v1/diary" for ::1 at 2020-06-19 14:23:02 -0500
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/diary"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 27)
+
+
+Started GET "/api/v1/diary/1" for ::1 at 2020-06-19 14:23:22 -0500
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/diary/1"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-19 14:23:26 -0500
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/diaries"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-06-19 14:23:31 -0500
+Processing by Api::V1::PetsController#index as HTML
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 72ms (Views: 0.1ms | ActiveRecord: 3.8ms | Allocations: 11453)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:23:32 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/diaries/1" for ::1 at 2020-06-19 14:23:59 -0500
+Processing by Api::V1::DiariesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 308)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:23:59 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/diaries/1" for ::1 at 2020-06-19 14:24:47 -0500
+Processing by Api::V1::DiariesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:24:47 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mDiary Load (0.2ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries" ORDER BY "diaries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePets (20200618225414)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "birth_date" date, "age" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200618225414"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDiaries (20200618232030)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "diaries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "post" varchar, "posted_date" date, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200618232030"]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPetIdToDiary (20200619191232)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "diaries" ADD "pet_id" integer[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200619191232"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-06-19 19:25:47.345125"], ["updated_at", "2020-06-19 19:25:47.345125"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Create (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "birth_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Micki"], ["birth_date", "2014-12-01"], ["created_at", "2020-06-19 19:25:52.658276"], ["updated_at", "2020-06-19 19:25:52.658276"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDiary Create (0.4ms)[0m  [1m[32mINSERT INTO "diaries" ("title", "post", "created_at", "updated_at", "pet_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Micki first time home"], ["post", "She is excited exploring around the house and dooking along the way"], ["created_at", "2020-06-19 19:25:52.690800"], ["updated_at", "2020-06-19 19:25:52.690800"], ["pet_id", 1]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/diaries/1" for ::1 at 2020-06-19 14:26:01 -0500
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::DiariesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:26:01 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 42)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-06-19 14:26:39 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (Duration: 53.4ms | Allocations: 4301)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 4.6ms | Allocations: 930)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 65.2ms | Allocations: 7492)
+Completed 200 OK in 87ms (Views: 82.3ms | ActiveRecord: 0.0ms | Allocations: 9534)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:26:39 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 48)
+
+
+Started GET "/api/v1/diaries/1" for ::1 at 2020-06-19 14:26:52 -0500
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/diaries/1"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 27)
+
+
+Started GET "/api/v1/1/diaries/1" for ::1 at 2020-06-19 14:27:04 -0500
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/1/diaries/1"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 27)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-19 14:27:09 -0500
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/diaries"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 27)
+
+
+Started GET "/api/v1/pets/1/diaries/1" for ::1 at 2020-06-19 14:27:39 -0500
+Processing by Api::V1::DiariesController#show as HTML
+  Parameters: {"pet_id"=>"1", "id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 269)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:27:39 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/pets/1/diaries/" for ::1 at 2020-06-19 14:27:42 -0500
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/pets/1/diaries"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mDiary Load (0.3ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries" ORDER BY "diaries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePets (20200618225414)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "birth_date" date, "age" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200618225414"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDiaries (20200618232030)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "diaries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "post" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200618232030"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPetIdToDiary (20200619191232)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.9ms)[0m  [1m[35mALTER TABLE "diaries" ADD "pet_id" integer[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200619191232"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-06-19 19:30:13.928873"], ["updated_at", "2020-06-19 19:30:13.928873"]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Create (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "birth_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Micki"], ["birth_date", "2014-12-01"], ["created_at", "2020-06-19 19:30:48.814419"], ["updated_at", "2020-06-19 19:30:48.814419"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Create (0.5ms)[0m  [1m[32mINSERT INTO "pets" ("name", "birth_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Micki"], ["birth_date", "2014-12-01"], ["created_at", "2020-06-19 19:31:02.311238"], ["updated_at", "2020-06-19 19:31:02.311238"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Create (0.5ms)[0m  [1m[32mINSERT INTO "pets" ("name", "birth_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Micki"], ["birth_date", "2014-12-01"], ["created_at", "2020-06-19 19:31:47.888411"], ["updated_at", "2020-06-19 19:31:47.888411"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Create (1.0ms)[0m  [1m[32mINSERT INTO "pets" ("name", "birth_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Micki"], ["birth_date", "2014-12-01"], ["created_at", "2020-06-19 19:32:25.497127"], ["updated_at", "2020-06-19 19:32:25.497127"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDiary Create (0.4ms)[0m  [1m[32mINSERT INTO "diaries" ("title", "post", "created_at", "updated_at", "pet_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Micki first time home"], ["post", "She is excited exploring around the house and dooking along the way"], ["created_at", "2020-06-19 19:32:25.538932"], ["updated_at", "2020-06-19 19:32:25.538932"], ["pet_id", 1]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mDiary Load (0.3ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries" ORDER BY "diaries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/api/v1/pets/1/diaries/1" for ::1 at 2020-06-19 14:33:38 -0500
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::DiariesController#show as HTML
+  Parameters: {"pet_id"=>"1", "id"=>"1"}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 397)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:33:38 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 42)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-06-19 14:33:47 -0500
+Processing by Api::V1::PetsController#index as HTML
+  [1m[36mPet Load (2.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 85ms (Views: 0.1ms | ActiveRecord: 6.7ms | Allocations: 13215)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:33:47 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "diaries"[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "diaries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "post" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "pet_id" integer)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "pets"[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "birth_date" date, "age" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200619191232)[0m
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200618225414),
+(20200618232030);
+
+[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-06-19 19:34:21.118975"], ["updated_at", "2020-06-19 19:34:21.118975"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "6f717ae5aa97ab918f9688782432efb3fab0dbb5"], ["created_at", "2020-06-19 19:34:21.130230"], ["updated_at", "2020-06-19 19:34:21.130230"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "diaries"[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "diaries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "post" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "pet_id" integer)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "pets"[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "birth_date" date, "age" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200619191232)[0m
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200618225414),
+(20200618232030);
+
+[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-06-19 19:34:21.170852"], ["updated_at", "2020-06-19 19:34:21.170852"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.6ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2020-06-19 19:34:21.180984"], ["key", "environment"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "6f717ae5aa97ab918f9688782432efb3fab0dbb5"], ["created_at", "2020-06-19 19:34:21.190417"], ["updated_at", "2020-06-19 19:34:21.190417"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "birth_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Micki"], ["birth_date", "2014-12-01"], ["created_at", "2020-06-19 19:34:21.218170"], ["updated_at", "2020-06-19 19:34:21.218170"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDiary Create (0.4ms)[0m  [1m[32mINSERT INTO "diaries" ("title", "post", "created_at", "updated_at", "pet_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Micki first time home"], ["post", "She is excited exploring around the house and dooking along the way"], ["created_at", "2020-06-19 19:34:21.266530"], ["updated_at", "2020-06-19 19:34:21.266530"], ["pet_id", 1]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Create (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "birth_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Micki"], ["birth_date", "2014-12-01"], ["created_at", "2020-06-19 19:34:30.771091"], ["updated_at", "2020-06-19 19:34:30.771091"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDiary Create (0.4ms)[0m  [1m[32mINSERT INTO "diaries" ("title", "post", "created_at", "updated_at", "pet_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Micki first time home"], ["post", "She is excited exploring around the house and dooking along the way"], ["created_at", "2020-06-19 19:34:30.791454"], ["updated_at", "2020-06-19 19:34:30.791454"], ["pet_id", 1]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/pets" for ::1 at 2020-06-19 14:34:39 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PetsController#index as HTML
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 56ms (Views: 0.2ms | ActiveRecord: 3.5ms | Allocations: 11405)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:34:39 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 42)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePets (20200618225414)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "birth_date" date, "age" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200618225414"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDiaries (20200618232030)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "diaries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "post" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200618232030"]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPetIdToDiary (20200619191232)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "diaries" ADD "pet_id" integer[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200619191232"]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-06-19 19:35:06.462961"], ["updated_at", "2020-06-19 19:35:06.462961"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Create (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "birth_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Micki"], ["birth_date", "2014-12-01"], ["created_at", "2020-06-19 19:35:10.593385"], ["updated_at", "2020-06-19 19:35:10.593385"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDiary Create (0.5ms)[0m  [1m[32mINSERT INTO "diaries" ("title", "post", "created_at", "updated_at", "pet_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Micki first time home"], ["post", "She is excited exploring around the house and dooking along the way"], ["created_at", "2020-06-19 19:35:10.623643"], ["updated_at", "2020-06-19 19:35:10.623643"], ["pet_id", 1]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/pets" for ::1 at 2020-06-19 14:35:22 -0500
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PetsController#index as HTML
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 76ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 10403)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:35:23 -0500
+Processing by PagesController#index as 
+  Parameters: {"path"=>"favicon"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 44)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-06-19 14:38:10 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#index as HTML
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 67ms (Views: 0.3ms | ActiveRecord: 4.3ms | Allocations: 7777)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-06-19 14:38:11 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/rails/info/routes" for ::1 at 2020-06-19 14:38:15 -0500
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [29 times] (Duration: 17.2ms | Allocations: 4140)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 4.4ms | Allocations: 703)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 30.6ms | Allocations: 6922)
+Completed 200 OK in 40ms (Views: 35.6ms | ActiveRecord: 0.0ms | Allocations: 8172)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-06-19 14:38:33 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [28 times] (Duration: 45.9ms | Allocations: 4009)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.2ms | Allocations: 708)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 54.3ms | Allocations: 6754)
+Completed 200 OK in 68ms (Views: 60.2ms | ActiveRecord: 0.0ms | Allocations: 8019)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-06-19 14:38:51 -0500
+Processing by Api::V1::PetsController#index as HTML
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 48ms (Views: 0.2ms | ActiveRecord: 3.1ms | Allocations: 7915)
+
+
+Started GET "/api/v1/pets/1" for ::1 at 2020-06-19 14:39:01 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/pets/1"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets/1/diaries" for ::1 at 2020-06-19 14:39:15 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/pets/1/diaries"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets/1/diaries/1" for ::1 at 2020-06-19 14:39:25 -0500
+Processing by Api::V1::DiariesController#show as HTML
+  Parameters: {"pet_id"=>"1", "id"=>"1"}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 258)
+
+
+Started GET "/api/v1/pets/1/diaries/1" for ::1 at 2020-06-19 14:56:27 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::DiariesController#show as HTML
+  Parameters: {"pet_id"=>"1", "id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 266)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-06-19 15:07:36 -0500
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PetsController#index as HTML
+  [1m[36mPet Load (1.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 84ms (Views: 0.2ms | ActiveRecord: 5.0ms | Allocations: 10403)
+
+
+Started GET "/" for 127.0.0.1 at 2020-06-19 15:08:01 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 19.1ms | Allocations: 315)
+Completed 200 OK in 39ms (Views: 30.0ms | ActiveRecord: 0.0ms | Allocations: 1592)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2020-06-19 15:08:11 -0500
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [28 times] (Duration: 22.2ms | Allocations: 4040)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 5.9ms | Allocations: 935)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 36.5ms | Allocations: 7032)
+Completed 200 OK in 72ms (Views: 57.6ms | ActiveRecord: 0.0ms | Allocations: 8382)
+
+
+Started GET "/api/v1/pets" for 127.0.0.1 at 2020-06-19 15:08:35 -0500
+Processing by Api::V1::PetsController#index as HTML
+  [1m[36mPet Load (1.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 34ms (Views: 0.4ms | ActiveRecord: 2.1ms | Allocations: 1754)
+
+
+Started GET "/api/v1/pets" for 127.0.0.1 at 2020-06-19 15:09:03 -0500
+Processing by Api::V1::PetsController#index as HTML
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 1691)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2020-06-19 15:09:05 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/diaries" for 127.0.0.1 at 2020-06-19 15:09:59 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/diaries"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets/1/diaries" for 127.0.0.1 at 2020-06-19 15:10:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/pets/1/diaries"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets/1/diaries" for 127.0.0.1 at 2020-06-19 15:10:50 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/pets/1/diaries"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets/1/diaries/1" for ::1 at 2020-06-19 15:11:54 -0500
+Processing by Api::V1::DiariesController#show as HTML
+  Parameters: {"pet_id"=>"1", "id"=>"1"}
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 263)
+
+
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPet Load (1.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+Started GET "/api/v1/pets/1/" for 127.0.0.1 at 2020-06-19 15:14:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/pets/1"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets/1" for 127.0.0.1 at 2020-06-19 15:14:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/pets/1"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/rails/info/routes" for ::1 at 2020-06-19 15:15:31 -0500
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [28 times] (Duration: 12.8ms | Allocations: 4006)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.6ms | Allocations: 703)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 19.1ms | Allocations: 6743)
+Completed 200 OK in 31ms (Views: 25.9ms | ActiveRecord: 0.0ms | Allocations: 7840)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-06-19 15:17:15 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#index as HTML
+  [1m[36mPet Load (1.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 31ms (Views: 0.1ms | ActiveRecord: 4.1ms | Allocations: 7885)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-06-19 15:19:15 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [29 times] (Duration: 15.1ms | Allocations: 3887)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.3ms | Allocations: 121)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 29.0ms | Allocations: 5839)
+Started GET "/api/v1/pets/1" for 127.0.0.1 at 2020-06-19 15:19:15 -0500
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.0ms | Allocations: 6451)
+
+
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (2.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:28:in `show'
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:30:in `show'
+Completed 200 OK in 84ms (Views: 0.7ms | ActiveRecord: 8.8ms | Allocations: 7879)
+
+
+Started GET "/api/v1/pets/1" for 127.0.0.1 at 2020-06-19 15:19:17 -0500
+Processing by Api::V1::PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:28:in `show'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:30:in `show'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1583)
+
+
+Started GET "/api/v1/pets/1/diaries/1" for ::1 at 2020-06-19 15:19:23 -0500
+Processing by Api::V1::DiariesController#show as HTML
+  Parameters: {"pet_id"=>"1", "id"=>"1"}
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 259)
+
+
+Started GET "/api/v1/pets/1/diaries" for 127.0.0.1 at 2020-06-19 15:19:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/pets/1/diaries"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets/1/diaries/" for ::1 at 2020-06-19 15:19:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/pets/1/diaries"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets/1/diaries" for 127.0.0.1 at 2020-06-19 15:19:40 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/pets/1/diaries"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets/1" for ::1 at 2020-06-19 15:19:41 -0500
+Processing by Api::V1::PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:28:in `show'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:30:in `show'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 1582)
+
+
+Started GET "/api/v1/pets/1/diaries/1" for ::1 at 2020-06-19 15:19:49 -0500
+Processing by Api::V1::DiariesController#show as HTML
+  Parameters: {"pet_id"=>"1", "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/rails/info/routes?path=/api/v1/pets/1/diaries%22" for 127.0.0.1 at 2020-06-19 15:20:55 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/api/v1/pets/1/diaries\""}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1625)
+
+
+Started GET "/rails/info/routes?path=/api/v1/pets/1/diaries" for 127.0.0.1 at 2020-06-19 15:21:12 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/api/v1/pets/1/diaries"}
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 660)
+
+
+Started GET "/rails/info/routes?path=/api/v1/pets/1/diaries" for 127.0.0.1 at 2020-06-19 15:21:14 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/api/v1/pets/1/diaries"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 652)
+
+
+Started GET "/rails/info/routes?path=/api/v1/pets/1/diaries" for 127.0.0.1 at 2020-06-19 15:21:17 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/api/v1/pets/1/diaries"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 652)
+
+
+Started GET "/rails/info/routes?path=/api/v1/pets/1/diaries" for 127.0.0.1 at 2020-06-19 15:21:19 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/api/v1/pets/1/diaries"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 652)
+
+
+Started GET "/rails/info/routes?path=/api/v1/pets/1/diaries" for 127.0.0.1 at 2020-06-19 15:21:21 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/api/v1/pets/1/diaries"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 652)
+
+
+Started GET "/rails/info/routes?path=/api/v1/pets/1/diaries" for 127.0.0.1 at 2020-06-19 15:22:20 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/api/v1/pets/1/diaries"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 652)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-06-19 15:22:48 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [29 times] (Duration: 45.8ms | Allocations: 3888)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 19.5ms | Allocations: 120)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 95.0ms | Allocations: 5721)
+Completed 200 OK in 133ms (Views: 103.3ms | ActiveRecord: 0.0ms | Allocations: 6186)
+
+
+Started GET "/api/v1/pets/1/diaries/1" for ::1 at 2020-06-19 15:22:52 -0500
+Processing by Api::V1::DiariesController#show as HTML
+  Parameters: {"pet_id"=>"1", "id"=>"1"}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 267)
+
+
+Started GET "/api/v1/pets/1/diaries/1" for ::1 at 2020-06-19 15:26:46 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::DiariesController#show as HTML
+  Parameters: {"pet_id"=>"1", "id"=>"1"}
+Completed 500 Internal Server Error in 285ms (ActiveRecord: 0.0ms | Allocations: 71003)
+
+
+  
+NameError (undefined local variable or method `pet_id' for #<Api::V1::DiariesController:0x00007fe81a8e0008>):
+  
+app/controllers/api/v1/diaries_controller.rb:13:in `show'
+Started GET "/api/v1/pets/1/diaries" for 127.0.0.1 at 2020-06-19 15:26:49 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/pets/1/diaries"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets/1/diaries/1" for ::1 at 2020-06-19 15:27:04 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::DiariesController#show as HTML
+  Parameters: {"pet_id"=>"1", "id"=>"1"}
+  [1m[36mDiary Load (5.9ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries" WHERE "diaries"."pet_id" = ? LIMIT ?[0m  [["pet_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/diaries_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 6.9ms | Allocations: 7583)
+
+
+  
+NoMethodError (undefined method `create_at' for #<Diary:0x00007fe8133d8e90>
+Did you mean?  created_at
+               created_at=
+               created_at?
+               create_pet
+               create_pet!):
+  
+app/controllers/api/v1/diaries_controller.rb:14:in `show'
+Started GET "/api/v1/pets/1/diaries" for 127.0.0.1 at 2020-06-19 15:27:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/pets/1/diaries"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets/1/diaries/1" for ::1 at 2020-06-19 15:28:11 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::DiariesController#show as HTML
+  Parameters: {"pet_id"=>"1", "id"=>"1"}
+  [1m[36mDiary Load (0.3ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries" WHERE "diaries"."pet_id" = ? LIMIT ?[0m  [["pet_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/diaries_controller.rb:13:in `show'
+Completed 200 OK in 63ms (Views: 0.1ms | ActiveRecord: 2.2ms | Allocations: 5842)
+
+
+Started GET "/api/v1/pets/1/diaries" for 127.0.0.1 at 2020-06-19 15:28:18 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/pets/1/diaries"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets/1/diaries/" for ::1 at 2020-06-19 15:28:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/pets/1/diaries"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets/1/diaries/1" for ::1 at 2020-06-19 15:29:06 -0500
+Processing by Api::V1::DiariesController#show as HTML
+  Parameters: {"pet_id"=>"1", "id"=>"1"}
+  [1m[36mDiary Load (0.3ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries" WHERE "diaries"."pet_id" = ? LIMIT ?[0m  [["pet_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/diaries_controller.rb:13:in `show'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 765)
+
+
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets" ORDER BY "pets"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mDiary Load (0.3ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries" WHERE "diaries"."pet_id" = ? LIMIT ?[0m  [["pet_id", 1], ["LIMIT", 11]]
+Started GET "/rails/info/routes" for ::1 at 2020-06-19 15:33:51 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (Duration: 14.1ms | Allocations: 4019)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.6ms | Allocations: 120)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 34.7ms | Allocations: 5908)
+Completed 200 OK in 40ms (Views: 36.2ms | ActiveRecord: 0.0ms | Allocations: 6374)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2020-06-19 15:33:55 -0500
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (Duration: 19.9ms | Allocations: 4018)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.3ms | Allocations: 120)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 23.7ms | Allocations: 5904)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms | Allocations: 6205)
+
+
+Started GET "/api/v1/pets/1/diaries/" for ::1 at 2020-06-19 15:34:01 -0500
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Api::V1::DiariesController):
+  
+actionpack (6.0.3.1) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets/1/diaries" for 127.0.0.1 at 2020-06-19 15:34:04 -0500
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Api::V1::DiariesController):
+  
+actionpack (6.0.3.1) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets/1/diaries" for ::1 at 2020-06-19 15:34:08 -0500
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Api::V1::DiariesController):
+  
+actionpack (6.0.3.1) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/rails/info/routes" for ::1 at 2020-06-19 15:42:04 -0500
+Started GET "/rails/info/routes" for 127.0.0.1 at 2020-06-19 15:43:31 -0500
+Started GET "/rails/info/routes" for ::1 at 2020-06-19 15:43:31 -0500
+Started GET "/rails/info/routes" for ::1 at 2020-06-19 15:43:31 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (Duration: 22.2ms | Allocations: 4018)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.6ms | Allocations: 120)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 24.6ms | Allocations: 5907)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms | Allocations: 6211)
+
+
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (Duration: 32.6ms | Allocations: 4019)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.4ms | Allocations: 120)
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 132.3ms | Allocations: 9730)
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (Duration: 35.9ms | Allocations: 4018)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.2ms | Allocations: 120)
+Completed 200 OK in 241ms (Views: 238.8ms | ActiveRecord: 0.0ms | Allocations: 21836)
+
+
+  Rendered collection of /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (Duration: 23.4ms | Allocations: 4018)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 45.0ms | Allocations: 5968)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.1ms | Allocations: 120)
+  Rendered /Users/phylliskan/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 93.2ms | Allocations: 12420)
+Completed 200 OK in 128ms (Views: 124.5ms | ActiveRecord: 0.0ms | Allocations: 13120)
+
+
+Completed 200 OK in 53ms (Views: 52.7ms | ActiveRecord: 0.0ms | Allocations: 6665)
+
+
