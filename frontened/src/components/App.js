@@ -3,12 +3,14 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Home from './Home'
 
+import NavBar from './layouts/NavBar'
+
 const App = () => {
     return (
-        // <NavLink />
         <div>
+            <NavBar />
             <Switch>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/pets" component={Home} />
                 {/* <Route exact path="/" component={AddPet} />
                     <Route exact path="/" component={Diary} /> */}
             </Switch>
