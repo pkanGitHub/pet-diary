@@ -1,0 +1,1 @@
+export const LOAD_PETS_SUCCESS = "LOAD_PETS_SUCCESS"
