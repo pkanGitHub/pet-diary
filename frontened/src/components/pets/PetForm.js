@@ -4,8 +4,8 @@ const PetForm = (props) => {
 
 
     return (
-        <div class="card">
-            <div class="container">
+        <div class="pet-card">
+            <div class="pet-form-open">
                 <h2 class="header">Pet Information</h2>
                 <form class="pet-form">
                     <div class="name-field">

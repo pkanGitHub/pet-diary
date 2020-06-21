@@ -1,6 +1,14 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import { loadPets } from '../redux/actions/petsActions'
+import PetForm from './pets/PetForm'
+import PetList from './pets/PetList'
+import '../styles/NavBarStyle.css'
+import '../styles/App.css'
+import DiaryForm from './diaries/DiaryForm'
+
+// import '../styles/Pet.css'
+
 const Home = ({ pets, loadPets }) => {
     // useEffect takes in two arguments, a function and an array
     // it looks for state changes for anything inside the array in the second argument
@@ -17,10 +25,12 @@ const Home = ({ pets, loadPets }) => {
 
     return (
         <>
-            {/* <PetsList pets={pets.data} /> */}
-            {pets.data && pets.data.map(pet => {
+            < PetForm />
+            {/* < DiaryForm /> */}
+            < PetList pets={pets} />
+            {/* {pets.data && pets.data.map(pet => {
                 return <div>{pet.attributes.name}</div>
-            })}
+            })} */}
         </>
     )
 }

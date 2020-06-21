@@ -10,9 +10,10 @@ const App = () => {
         <div>
             <NavBar />
             <Switch>
+                <Route exact path="/" component={Home} />
                 <Route exact path="/pets" component={Home} />
-                {/* <Route exact path="/" component={AddPet} />
-                    <Route exact path="/" component={Diary} /> */}
+                {/* <Route exact path="/" component={AddPet} /> */}
+                {/* <Route exact path="/add-diary" component={DiaryForm} /> */}
             </Switch>
         </div>
     )
