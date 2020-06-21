@@ -17,6 +17,7 @@ class Api::V1::PetsController < ApplicationController
     end
 
     def update
+        @pet = Pet.find(params[:id])
         if @pet.update(pet_params)
             render json: PetSerializer.new(@pet).serialized_json
         else
