@@ -10,3 +10,20 @@ export async function getPets() {
         handleError(error)
     }
 }
+
+export function savePet(pet) {
+    // console.log(pet)
+    // debugger;
+    return fetch(`${baseUrl}/pets`,
+        {
+            headers: {
+                "Content-Type": "application/json"
+            },
+            method: "POST",
+            body: JSON.stringify(pet)
+        }
+    )
+        .then(handleResponse)
+        .catch(handleError);
+
+}

@@ -12,10 +12,23 @@ export function loadPetsSuccess(pets) {
     return { type: types.LOAD_PETS_SUCCESS, pets }
 }
 
+export function createPetSuccess(pet) {
+    return { type: types.CREATE_PET_SUCCESS, pet }
+}
+
 export function loadPets() {
     return function (dispatch) {
         return petsAPI.getPets().then(pets => {
             dispatch(loadPetsSuccess(pets))
+        })
+    }
+}
+
+export function createPet(pet) {
+    return function (dispatch) {
+        return petsAPI.savePet(pet).then(pet => {
+            dispatch(createPetSuccess(pet))
+            return pet
         })
     }
 }
