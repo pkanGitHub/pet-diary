@@ -57,9 +57,6 @@
 }
 
 .pet-list {
-    /* position: absolute;
-    left: 300px; 
-    top: 200px;   */
     margin: auto;
     width: 50%;
     padding-top: 90px;
@@ -72,33 +69,27 @@
     margin-top: 30px;
 }
 
-/* Styling for DiaryCard */
+/* Styling for DiaryFormCard */
 
-/* .center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
-} */
-
-.diary-card, .diary-header {
-    margin: auto;
-    width: 50%;
+.diary-card {
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    /* margin-left: 1050px; */
+    width: 700px;
+    height: 500px;
     padding-top: 50px;
+    padding-right:30px;
+    border: 1px solid black;
+
     text-align: center;
 }
 
-.dairy-card {
-    width: 800px;
-    height: 1000px;
-    /* background-color: white; */
-    /* border: 1px solid black; */
-}
-
+/* 
 .diary-header {
     padding-top: 30px;
     padding-bottom: 50px;
-}
+} */
 
 .pet-option {
     font-size: 15px;
@@ -107,7 +98,7 @@
     margin-bottom: 10px;
 }
 
-.diary-container input {
+.diary-form-container input {
     display: inline-block;
     width: 500px;
     height: 45px;
@@ -126,14 +117,18 @@
 /* Styling for DiaryList */
 
 .diary-list-container {
-    margin-left: 200px;
-    margin-top: 50px;
-    width: 750px;
+    /* spacing between add diary and diary box  */
+    /* margin: top(px) right(px) bottom(px) left(px) */
+    margin: 50px 0px 0px 150px;
+    width: 700px;
     height: 200px;
+    /* spacing inside of box  */
     padding-top: 30px;
     padding-left: 30px;
     text-align: left;
     border: 1px solid black;
+    /* float: left; */
+
 }
 
 .diary-title {
@@ -146,9 +141,19 @@
 }
 
 .add-diary-btn {
-    margin-left: 200px;
-    margin-top: 80px;
+    margin-top: 50px;
+    margin-left: 780px;
+    /* margin-top: 80px; */
 }
+
+
+
+/* .center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+} */
 
 
 
