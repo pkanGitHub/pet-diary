@@ -14,10 +14,10 @@ class Api::V1::DiariesController < ApplicationController
 
     def create
         @diary = Diary.new(diary_params)
-        if diary.save 
+        if @diary.save 
             render json: DiarySerializer.new(@diary).serialized_json, status: :created
         else 
-            render json: @pets.errors.messages, status: :unprocessable_entity
+            render json: @diary.errors.messages, status: :unprocessable_entity
         end
     end
 
@@ -27,17 +27,17 @@ class Api::V1::DiariesController < ApplicationController
     end
 
     def update
-        if diary.update(diary_params)
+        if @diary.update(diary_params)
             render json: DiarySerializer.new(@diary).serialized_json
         else 
-            render json: @pets.errors.messages, status: :unprocessable_entity
+            render json: @pet.errors.messages, status: :unprocessable_entity
         end
     end
 
 
     def destroy
-        diary = Diary.find(params[:id])
-        if diary.destroy
+        @diary = Diary.find(params[:id])
+        if @diary.destroy
             head :no_content
         else 
             render json: @pets.errors.messages, status: :unprocessable_entity
@@ -48,6 +48,6 @@ class Api::V1::DiariesController < ApplicationController
     private
 
     def diary_params
-        params.require(:diary).permit(:title, :post, :create_at, :pet_id)
+        params.require(:diary).permit(:title, :post, :pet_id)
     end
 end
