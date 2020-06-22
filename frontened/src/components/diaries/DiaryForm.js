@@ -5,7 +5,6 @@ const DiaryForm = () => {
         <div class="diary-card">
             <h2 class="diary-header">Write New Diary</h2>
             <form class="diary-form">
-                {/* <div> */}
                 <select name="pets" id="pets" class="pet-option">
                     <option class="options" value="select-pet">Select Pet</option>
                 </select>
@@ -19,8 +18,7 @@ const DiaryForm = () => {
                         <input type="text" placeholder="What Happened Today?" />
                     </div>
                 </div>
-
-                {/* </div> */}
+                <button class="info-create btn">Publish</button>
             </form>
         </div>
     )
