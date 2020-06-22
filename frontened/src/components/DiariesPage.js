@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
-import { loadDiaries } from '../redux/actions/diariesActions'
+import { loadDiaries, createDiary } from '../redux/actions/diariesActions'
 import DiaryForm from './diaries/DiaryForm'
 import DiaryList from './diaries/DiaryList'
 
 
-const DiariesPage = ({ diaries, loadDiaries }) => {
+const DiariesPage = ({ diaries, loadDiaries, createDiary }) => {
 
     useEffect(() => {
         if (!diaries.data) {
@@ -15,15 +15,42 @@ const DiariesPage = ({ diaries, loadDiaries }) => {
         }
     }, [])
 
+    const [popOut, setPopOut] = useState(false)
+    const [newDiary, setNewDiary] = useState({
+        pet_id: "1",
+        title: "",
+        post: ""
+    })
 
+    const closeForm = (event) => {
+        event.preventDefault();
+        setPopOut(!popOut);
+    }
 
-    // const onChange = (event) => {
-    //     const { title, value } = event.target;
-    // }
+    const handleForm = (event) => {
+        event.preventDefault();
+        createDiary(newDiary).then(diary => {
+            if (diary.data) setNewDiary({ title: "", post: "" })
+        })
+    }
+
+    const onChange = (event) => {
+        const { name, value } = event.target;
+        setNewDiary({ ...newDiary, [name]: value })
+    }
 
     return (
         <>
-            <DiaryList diaries={diaries} />
+            <div>{newDiary.title}</div>
+
+            <div>
+                {popOut && <DiaryForm
+                    handleForm={handleForm}
+                    onChange={onChange}
+                    newDiary={newDiary}
+                />}
+                <DiaryList diaries={diaries} closeForm={closeForm} />
+            </div>
         </>
     )
 
@@ -31,7 +58,8 @@ const DiariesPage = ({ diaries, loadDiaries }) => {
 }
 
 const mapDispatchToProps = {
-    loadDiaries
+    loadDiaries,
+    createDiary
 }
 
 function mapStateToProps(state) {

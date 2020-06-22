@@ -4,7 +4,7 @@ const Diary = ({ diary }) => {
 
         const publishedDate = new Date(Date.parse(diary.attributes.created_at))
         const year = publishedDate.getFullYear()
-        const month = publishedDate.getMonth()
+        const month = publishedDate.getMonth() + 1
         const day = publishedDate.getDate()
         const formattedDate = `${month}/${day}/${year}`
 

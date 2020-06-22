@@ -19,7 +19,7 @@ export function loadDiaries() {
 
 export function createDiary(diary) {
     return function (dispatch) {
-        return diariesAPI.saveDiary().then(diary => {
+        return diariesAPI.saveDiary(diary).then(diary => {
             dispatch(createDiarySuccess(diary))
             return diary
         })

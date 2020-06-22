@@ -12,8 +12,8 @@ export async function getDiaries() {
 }
 
 export function saveDiary(diary) {
-
-    return fetch(`${baseUrl}/diaries`,
+    const { pet_id } = diary
+    return fetch(`${baseUrl}/pets/${pet_id}/diaries`,
         {
             headers: {
                 "Content-Type": "application/json"

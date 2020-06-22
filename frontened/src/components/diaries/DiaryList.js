@@ -1,11 +1,11 @@
 import React from 'react'
 import Diary from './Diary'
 
-const DiaryList = ({ diaries }) => {
+const DiaryList = ({ diaries, closeForm }) => {
     return (
         <div>
             <div class="add-diary-btn">
-                <button class="default btn">Add Diary</button>
+                <button class="default btn" onClick={closeForm}>Add Diary</button>
             </div>
             <div class="diary-list-container">
                 {diaries.data && diaries.data.map(diary => {
