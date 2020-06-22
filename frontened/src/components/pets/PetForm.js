@@ -16,7 +16,7 @@ const PetForm = ({ handleForm, closeForm, onChange, newPet }) => {
                     <br />
                     <div class="birthdate-field">
                         <label>Birth Date: </label>
-                        <input placeholder="mm/dd/yyyy" type="text" name="birth_date" onChange={onChange} value={newPet.birth_date} />
+                        <input placeholder="YYYY/MM/DD" type="text" name="birth_date" onChange={onChange} value={newPet.birth_date} />
                     </div>
                     <br />
                     <div class="extra content">
