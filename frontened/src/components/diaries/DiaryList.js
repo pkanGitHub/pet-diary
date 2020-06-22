@@ -1,21 +1,18 @@
 import React from 'react'
+import Diary from './Diary'
 
-const DiaryList = () => {
+const DiaryList = ({ diaries }) => {
     return (
-        <>
+        <div>
             <div class="add-diary-btn">
                 <button class="default btn">Add Diary</button>
             </div>
             <div class="diary-list-container">
-                <div>
-                    <span class="diary-title">Micki First Time Home</span>
-                    <span class="published-date">Published Date: 2014/01/12</span>
-                </div>
-                <div>
-                    <p class="diary-post">She is excited exploring around the house and dooking along the way</p>
-                </div>
+                {diaries.data && diaries.data.map(diary => {
+                    return <Diary diary={diary} />
+                })}
             </div>
-        </>
+        </div>
     )
 }
 

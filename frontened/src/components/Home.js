@@ -57,8 +57,8 @@ const Home = ({ pets, loadPets, createPet }) => {
 
     return (
         <>
-            <div>{newPet.name}</div>
-            <div>{newPet.birth_date}</div>
+            {/* <div>{newPet.name}</div>
+            <div>{newPet.birth_date}</div> */}
             {popOut && < PetForm
                 handleForm={handleForm}
                 closeForm={closeForm}
@@ -66,8 +66,7 @@ const Home = ({ pets, loadPets, createPet }) => {
                 newPet={newPet}
             />}
             < PetList pets={pets} popOut={popOut} setPopOut={setPopOut} />
-            {/* < DiaryForm /> */}
-            {/* <DiaryList /> */}
+
             {/* {pets.data && pets.data.map(pet => {
                 return <div>{pet.attributes.name}</div>
             })} */}

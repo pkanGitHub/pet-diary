@@ -1,7 +1,10 @@
 import { combineReducers } from 'redux'
 import pets from './petReducer'
+import diaries from './diaryReducer'
 const rootReducer = combineReducers({
-    pets
+    pets,
+    diaries
+
 });
 
-export default rootReducer
+export default rootReducer;
