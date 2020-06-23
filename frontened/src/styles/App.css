@@ -107,7 +107,7 @@
     
 }
 
-.diary-container label {
+.diary-form-container label {
     display: inline-block;
     font-size: 20px;
     width: 50px;
@@ -120,24 +120,40 @@
     /* spacing between add diary and diary box  */
     /* margin: top(px) right(px) bottom(px) left(px) */
     margin: 50px 0px 0px 150px;
-    width: 700px;
+    width: 730px;
     height: 200px;
-    /* spacing inside of box  */
+}
+
+.diary-container {
+    margin-bottom: 30px;
     padding-top: 30px;
     padding-left: 30px;
     text-align: left;
     border: 1px solid black;
-    /* float: left; */
-
+    height: 200px;
+    
 }
 
 .diary-title {
     font-size: 30px;
+    /* border: 1px solid black; */
+
     /* padding-top: 10px; */
 }
 
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .published-date {
-    margin-left: 250px;
+    /* padding: top(px) right(px) bottom(px) left(px) */
+    margin-right: 50px; 
+    padding-top: 15px;
+    /* padding: 0px 50px 0px 40px; */
+    /* border: 1px solid black; */
+
+    
 }
 
 .add-diary-btn {

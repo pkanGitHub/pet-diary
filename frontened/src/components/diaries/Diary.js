@@ -9,8 +9,8 @@ const Diary = ({ diary }) => {
         const formattedDate = `${month}/${day}/${year}`
 
         return (
-                <div>
-                        <div>
+                <div class="diary-container">
+                        <div class="flex-container">
                                 <span class="diary-title">{diary.attributes.title}</span>
                                 <span class="published-date">{`Published Date: ${formattedDate}`}</span>
                         </div>
