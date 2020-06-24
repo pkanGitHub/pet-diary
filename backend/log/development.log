@@ -7639,3 +7639,162 @@ Processing by Api::V1::DiariesController#all_diaries as */*
 Completed 200 OK in 23ms (Views: 1.4ms | ActiveRecord: 2.4ms | Allocations: 1293)
 
 
+Started GET "/api/v1/diaries" for ::1 at 2020-06-23 15:16:52 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (2.4ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 21ms (Views: 1.0ms | ActiveRecord: 2.4ms | Allocations: 1293)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-06-23 18:45:53 -0500
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (1.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 125ms (Views: 0.3ms | ActiveRecord: 9.1ms | Allocations: 14345)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-23 18:48:38 -0500
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (0.3ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 5066)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-23 18:51:59 -0500
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (0.3ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1290)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-23 18:52:21 -0500
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (0.4ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1290)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-23 18:52:54 -0500
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (1.1ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 1273)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-23 18:53:34 -0500
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (0.2ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1273)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-23 18:57:19 -0500
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (0.2ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1290)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-24 13:21:25 -0500
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (1.4ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 6675)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-24 13:27:06 -0500
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (0.6ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 1290)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-24 13:27:42 -0500
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (0.2ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1290)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-24 13:28:18 -0500
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (0.2ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1290)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-24 13:29:01 -0500
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (0.2ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1273)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-24 13:29:25 -0500
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (0.2ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1290)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-24 13:29:58 -0500
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (0.2ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1273)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-24 13:36:30 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (1.9ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 1.9ms | Allocations: 1293)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-24 14:14:28 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (3.1ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 19ms (Views: 1.6ms | ActiveRecord: 3.1ms | Allocations: 1293)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-24 14:15:46 -0500
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (0.2ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1273)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-24 14:50:20 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (5.3ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 67ms (Views: 3.1ms | ActiveRecord: 5.3ms | Allocations: 1294)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-24 15:06:44 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (2.4ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 33ms (Views: 1.1ms | ActiveRecord: 2.4ms | Allocations: 1293)
+
+

@@ -8,12 +8,10 @@ import DiaryList from './diaries/DiaryList'
 const DiariesPage = ({ diaries, loadDiaries, createDiary }) => {
 
     useEffect(() => {
-        if (!diaries.data) {
-            loadDiaries().catch(error => {
-                console.log("Loading diaries failed: " + error)
-            })
-        }
-    }, [])
+        loadDiaries().catch(error => {
+            console.log("Loading diaries failed: " + error)
+        })
+    }, [loadDiaries])
 
     const [popOut, setPopOut] = useState(false)
     const [newDiary, setNewDiary] = useState({
@@ -41,9 +39,7 @@ const DiariesPage = ({ diaries, loadDiaries, createDiary }) => {
 
     return (
         <>
-            <div>{newDiary.title}</div>
-
-            <div>
+            <div class="container-wrapper">
                 {popOut && <DiaryForm
                     handleForm={handleForm}
                     onChange={onChange}

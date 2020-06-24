@@ -19,12 +19,10 @@ const Home = ({ pets, loadPets, createPet }) => {
     // if you have an empty array, it will just run the first function once after the component mounts
 
     useEffect(() => {
-        if (!pets.data) {
-            loadPets().catch(error => {
-                console.log("Loading pets failed: " + error)
-            })
-        }
-    }, [])
+        loadPets().catch(error => {
+            console.log("Loading pets failed: " + error)
+        })
+    }, [loadPets])
 
     const [popOut, setPopOut] = useState(false)
     const [newPet, setNewPet] = useState({
