@@ -73,16 +73,18 @@
 
 .diary-card {
     position: absolute;
-    right: 0;
+    right: 0; 
     margin-right: 50px;
-    /* margin-left: 1050px; */
+    margin-left: 1050px;
     width: 700px;
     height: 500px;
     padding-top: 50px;
-    padding-right:30px;
+    /* padding-right:30px; */
     border: 1px solid black;
 
     text-align: center;
+    width: 45%;
+    /* margin: auto;  */
 }
 
 /* 
@@ -112,6 +114,7 @@
     font-size: 20px;
     width: 50px;
     text-align: right;
+
 }
 
 /* Styling for DiaryList */
@@ -119,8 +122,9 @@
 .diary-list-container {
     /* spacing between add diary and diary box  */
     /* margin: top(px) right(px) bottom(px) left(px) */
-    margin: 50px 0px 0px 150px;
-    width: 730px;
+    margin: 50px 0px 0px 100px;
+    width: 40%;
+    /* width: 730px; */
     height: 200px;
 }
 
@@ -137,7 +141,6 @@
 .diary-title {
     font-size: 30px;
     /* border: 1px solid black; */
-
     /* padding-top: 10px; */
 }
 
@@ -150,19 +153,18 @@
     /* padding: top(px) right(px) bottom(px) left(px) */
     margin-right: 50px; 
     padding-top: 15px;
-    /* padding: 0px 50px 0px 40px; */
+    /* border: 1px solid black; */
+}
+
+.add-diary-btn {
+    position: relative;
+    /* margin: 50px 0px 0px 780px; */
+    margin-top: 50px;
+    left: 40%;
     /* border: 1px solid black; */
 
     
 }
-
-.add-diary-btn {
-    margin-top: 50px;
-    margin-left: 780px;
-    /* margin-top: 80px; */
-}
-
-
 
 /* .center {
     margin: auto;
