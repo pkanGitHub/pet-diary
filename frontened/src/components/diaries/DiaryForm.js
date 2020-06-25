@@ -1,25 +1,24 @@
 import React from 'react'
+import SelectPet from './SelectPet'
 
-const DiaryForm = ({ handleForm, onChange, newDiary }) => {
+const DiaryForm = ({ handleForm, onChange, newDiary, pets }) => {
     return (
-        <div class="diary-card">
-            <form class="diary-form" onSubmit={handleForm}>
-                <select name="pets" id="pets" class="pet-option">
-                    <option class="options" value="select-pet">Select Pet</option>
-                </select>
-                <div class="diary-form-container">
-                    <div class="title">
+        <div className="diary-card">
+            <form className="diary-form" onSubmit={handleForm}>
+                < SelectPet selectorValue={newDiary.id} onChange={onChange} pets={pets} />
+                <div className="diary-form-container">
+                    <div className="title">
                         <label>Title: </label>
                         <input type="text" name="title" onChange={onChange} value={newDiary.title} />
                     </div>
-                    <div class="diary-post">
+                    <div className="diary-post">
                         <label>Diary: </label>
                         <input type="text" name="post" placeholder="What Happened Today?" onChange={onChange} value={newDiary.post} />
                     </div>
                 </div>
-                <button class="info-create btn">Publish</button>
+                <button className="info-create btn">Publish</button>
             </form>
-        </div>
+        </div >
     )
 }
 

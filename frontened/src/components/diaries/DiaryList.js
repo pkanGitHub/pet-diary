@@ -3,12 +3,12 @@ import Diary from './Diary'
 
 const DiaryList = ({ diaries, closeForm }) => {
     return (
-        <div>
-            <div class="add-diary-btn">
-                <button class="default btn" onClick={closeForm}>Add Diary</button>
+        <div className="dairies-list-flex">
+            <div className="add-diary-btn">
+                <button className="default btn" onClick={closeForm}>Add Diary</button>
             </div>
-            <div class="diary-list-container">
-                {diaries.data && diaries.data.map(diary => {
+            <div className="diary-list-container">
+                {diaries.map(diary => {
                     return <Diary diary={diary} />
                 })}
             </div>
