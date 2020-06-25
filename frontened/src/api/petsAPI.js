@@ -11,19 +11,41 @@ export async function getPets() {
     }
 }
 
+function formatPet(pet) {
+    if (pet.id) {
+        return {
+            pet: {
+                name: pet.name,
+                birth_date: pet.birth_date
+            }
+        }
+    } else {
+        return {
+            name: pet.name,
+            birth_date: pet.birth_date
+        }
+    }
+}
+
 export function savePet(pet) {
     // console.log(pet)
     // debugger;
-    return fetch(`${baseUrl}/pets`,
+    const idOrBlank = pet.id ? pet.id : ""
+    return fetch(`${baseUrl}/pets/${idOrBlank}`,
         {
             headers: {
                 "Content-Type": "application/json"
             },
-            method: "POST",
-            body: JSON.stringify(pet)
+            method: `${pet.id ? "PUT" : "POST"}`,
+            body: JSON.stringify(formatPet(pet))
         }
     )
         .then(handleResponse)
         .catch(handleError);
 
+}
+
+export function deletePet(pet) {
+    return fetch(`${baseUrl}/pets/${pet.id}`, { method: "DELETE" })
+        .catch(handleError)
 }

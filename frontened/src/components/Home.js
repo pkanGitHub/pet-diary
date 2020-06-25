@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
-import { loadPets, createPet } from '../redux/actions/petsActions'
+import { loadPets, createPet, deletePet } from '../redux/actions/petsActions'
 import PetForm from './pets/PetForm'
 import PetList from './pets/PetList'
 
@@ -12,7 +12,7 @@ import '../styles/App.css'
 
 // import '../styles/Pet.css'
 
-const Home = ({ pets, loadPets, createPet }) => {
+const Home = ({ pets, loadPets, createPet, deletePet }) => {
     // useEffect takes in two arguments, a function and an array
     // it looks for state changes for anything inside the array in the second argument
     // if there are state changes it will run the function in the first argument
@@ -26,12 +26,18 @@ const Home = ({ pets, loadPets, createPet }) => {
 
     const [popOut, setPopOut] = useState(false)
     const [newPet, setNewPet] = useState({
+        id: "",
         name: "",
         birth_date: ""
     })
 
     const closeForm = (event) => {
         event.preventDefault();
+        setNewPet({
+            id: "",
+            name: "",
+            birth_date: ""
+        })
         setPopOut(!popOut);
     }
 
@@ -57,24 +63,31 @@ const Home = ({ pets, loadPets, createPet }) => {
         <>
             {/* <div>{newPet.name}</div>
             <div>{newPet.birth_date}</div> */}
-            {popOut && < PetForm
-                handleForm={handleForm}
-                closeForm={closeForm}
-                onChange={onChange}
-                newPet={newPet}
-            />}
-            < PetList pets={pets} popOut={popOut} setPopOut={setPopOut} />
-
-            {/* {pets.data && pets.data.map(pet => {
-                return <div>{pet.attributes.name}</div>
-            })} */}
+            <div className="pet-flex">
+                < PetList
+                    pets={pets}
+                    popOut={popOut}
+                    setPopOut={setPopOut}
+                    setNewPet={setNewPet}
+                    deletePet={deletePet}
+                />
+                <div style={{ width: "400px" }}>
+                    {popOut && < PetForm
+                        handleForm={handleForm}
+                        closeForm={closeForm}
+                        onChange={onChange}
+                        newPet={newPet}
+                    />}
+                </div>
+            </div>
         </>
     )
 }
 
 const mapDispatchToProps = {
     loadPets,
-    createPet
+    createPet,
+    deletePet
 }
 
 function mapStateToProps(state) {

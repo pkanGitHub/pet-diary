@@ -12,8 +12,16 @@ export function loadPetsSuccess(pets) {
     return { type: types.LOAD_PETS_SUCCESS, pets }
 }
 
+export function updatePetSuccess(pet) {
+    return { type: types.UPDATE_PET_SUCCESS, pet }
+}
+
 export function createPetSuccess(pet) {
     return { type: types.CREATE_PET_SUCCESS, pet }
+}
+
+export function deletePetSuccess(pet) {
+    return { type: types.DELETE_PET_SUCCESS, pet }
 }
 
 export function loadPets() {
@@ -25,10 +33,21 @@ export function loadPets() {
 }
 
 export function createPet(pet) {
+    const createPet = pet.id === ""
     return function (dispatch) {
         return petsAPI.savePet(pet).then(pet => {
-            dispatch(createPetSuccess(pet))
+            createPet ?
+                dispatch(createPetSuccess(pet)) :
+                dispatch(updatePetSuccess(pet))
             return pet
         })
+    }
+}
+
+export function deletePet(pet) {
+    return function (dispatch) {
+        return petsAPI.deletePet(pet).then(
+            () => dispatch(deletePetSuccess(pet))
+        )
     }
 }
