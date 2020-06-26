@@ -12741,3 +12741,116 @@ Processing by Api::V1::PetsController#index as */*
 Completed 200 OK in 27ms (Views: 1.8ms | ActiveRecord: 1.5ms | Allocations: 2625)
 
 
+Started GET "/api/v1/pets" for ::1 at 2020-06-26 12:20:15 -0500
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (1.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 8]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 9]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 51ms (Views: 0.2ms | ActiveRecord: 4.9ms | Allocations: 11303)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-06-26 12:21:47 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 8]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 9]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 2617)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-06-26 12:27:05 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (1.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 8]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 9]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 28ms (Views: 1.7ms | ActiveRecord: 1.6ms | Allocations: 2617)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-26 12:39:07 -0500
+Started GET "/api/v1/pets" for ::1 at 2020-06-26 12:39:07 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (1.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 8]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 9]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 21ms (Views: 0.9ms | ActiveRecord: 3.4ms | Allocations: 2677)
+
+
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (5.3ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 64ms (Views: 2.5ms | ActiveRecord: 5.3ms | Allocations: 5349)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-26 12:46:23 -0500
+Started GET "/api/v1/pets" for ::1 at 2020-06-26 12:46:23 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::DiariesController#all_diaries as */*
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mDiary Load (1.1ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  [1m[36mPet Load (1.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 148ms (Views: 0.5ms | ActiveRecord: 1.1ms | Allocations: 2236)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 8]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 9]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 153ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 4289)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-06-26 12:52:12 -0500
+Started GET "/api/v1/diaries" for ::1 at 2020-06-26 12:52:12 -0500
+Processing by Api::V1::PetsController#index as */*
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mDiary Load (0.3ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2311)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 8]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 9]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4407)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-06-26 13:49:57 -0500
+Started GET "/api/v1/pets" for ::1 at 2020-06-26 13:49:57 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (1.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (0.7ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 8]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 9]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 22ms (Views: 0.7ms | ActiveRecord: 0.7ms | Allocations: 2664)
+
+
+Completed 200 OK in 40ms (Views: 0.1ms | ActiveRecord: 3.4ms | Allocations: 4657)
+
+

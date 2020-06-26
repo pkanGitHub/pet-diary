@@ -20,7 +20,7 @@ const Pet = ({ pet, setNewPet, setPopOut, deletePet }) => {
     }
     return (
         <div>
-            <span onClick={() => deletePet(pet)}><i className="fa fa-trash" aria-hidden="true"></i></span>
+            <span onClick={() => deletePet(pet)}><i className="fa fa-trash" aria-hidden="true" style={{ padding: "0% 3%" }}></i></span>
             <span className="pet-name">{`${pet.attributes.name}`}</span>
             <span className="birth-date">{`Birth Date: ${pet.attributes.birth_date}`}</span>
             <span className="age">{`Age: ${age}`}</span>
