@@ -1,14 +1,9 @@
 import React from 'react'
 
-// import moment from 'moment' //convert date format
-
 const Pet = ({ pet, setNewPet, setPopOut, deletePet }) => {
-    // const birthDate = pet.attributes.birth_date
-    // const dateConv = new Date(moment(birthDate).format('MM/DD/YYYY'))
 
     const birthDate = new Date(Date.parse(pet.attributes.birth_date))
     const age = (new Date().getFullYear()) - birthDate.getFullYear()
-    // const age = birthDate.diff(moment(), 'years')
 
     const updatePet = () => {
         setPopOut(true)

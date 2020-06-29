@@ -1,11 +1,9 @@
 import React from 'react'
-// import { selectDiary } from '../redux/actions/index'
 import { Route, Switch } from 'react-router-dom'
-import Home from './Home'
-
 import NavBar from './layouts/NavBar'
+import Home from './Home'
+import PetsPage from './PetsPage'
 import DiariesPage from './DiariesPage'
-// import DiaryForm from './diaries/DiaryForm'
 
 const App = () => {
     return (
@@ -13,7 +11,7 @@ const App = () => {
             <NavBar />
             <Switch>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/pets" component={Home} />
+                <Route exact path="/pets" component={PetsPage} />
                 <Route exact path="/diaries" component={DiariesPage} />
                 {/* <Route component={PageNotFound} /> */}
             </Switch>

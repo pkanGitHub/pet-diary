@@ -1,0 +1,11 @@
+/* Home page  */
+
+.home-container {
+    display: flex;
+    justify-content: center;
+}
+
+.home-description {
+    width: 50%;
+    border: 1px black solid;
+}
