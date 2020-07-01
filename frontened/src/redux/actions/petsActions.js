@@ -22,6 +22,7 @@ export function deletePetSuccess(pet) {
     return { type: types.DELETE_PET_SUCCESS, pet }
 }
 
+// actions 
 export function loadPets() {
     return function (dispatch) {
         return petsAPI.getPets().then(pets => {
