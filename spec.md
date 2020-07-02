@@ -15,15 +15,15 @@
 - [x] Use Redux middleware to respond to and modify state change.
 - [x] Make use of async actions and `redux-thunk` middleware to send data to and receive data from a server.
 - [x] Rails API backend that handles data persistence with a database. Use `fetch()` within your actions to `GET` and `POST` data from your API. Do not use jQuery methods.
-- [ ] Your client-side application should handle the display of data with minimal data manipulation.
+- [x] Your client-side application should handle the display of data with minimal data manipulation.
 - [x] Your application should have some minimal styling: react-bootstrap or hand-written are fine
-- [ ] Once your app is complete, [fill out this checklist](https://docs.google.com/forms/d/e/1FAIpQLSfX7qH_FqFqJ9vMMhtlHSYxhhafKJm8fe01IvsFNFitFC2nOA/viewform).
+- [x] Once your app is complete, [fill out this checklist](https://docs.google.com/forms/d/e/1FAIpQLSfX7qH_FqFqJ9vMMhtlHSYxhhafKJm8fe01IvsFNFitFC2nOA/viewform).
 
 ## Concepts
 
-- [ ] Good understanding of the react/redux state flow
-- [ ] Good understanding of state and props in React
-- [ ] Knowledge of async JS with Promises
+- [x] Good understanding of the react/redux state flow
+- [x] Good understanding of state and props in React
+- [x] Knowledge of async JS with Promises
 
 ### Things the Reviewer may ask about
 
