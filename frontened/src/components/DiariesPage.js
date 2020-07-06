@@ -40,7 +40,7 @@ const DiariesPage = ({ diaries, loadDiaries, createDiary, pets, loadPets }) => {
     }
 
     const onChange = (event) => {
-        console.log(event.target.value)
+        // console.log(event.target.value)
         const { name, value } = event.target;
         setNewDiary({ ...newDiary, [name]: value })
     }

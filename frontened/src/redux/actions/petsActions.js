@@ -1,3 +1,5 @@
+// this is where I am going to keep my action creator functions
+
 import * as types from './actionTypes'
 import * as petsAPI from '../../api/petsAPI'
 
@@ -5,7 +7,6 @@ import * as petsAPI from '../../api/petsAPI'
 // Reducers listen for dispatched actions, they make changes to the store
 // Whenever the store changes, it automatically updates components 
 
-// action creator
 export function loadPetsSuccess(pets) {
     return { type: types.LOAD_PETS_SUCCESS, pets }
 }
@@ -22,7 +23,7 @@ export function deletePetSuccess(pet) {
     return { type: types.DELETE_PET_SUCCESS, pet }
 }
 
-// actions 
+//async actions (thunk)
 export function loadPets() {
     return function (dispatch) {
         return petsAPI.getPets().then(pets => {

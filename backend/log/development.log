@@ -13889,3 +13889,953 @@ Processing by Api::V1::PetsController#index as */*
 Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 2657)
 
 
+Started GET "/api/v1/pets" for ::1 at 2020-07-02 21:20:52 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (1.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 52ms (Views: 0.2ms | ActiveRecord: 5.4ms | Allocations: 10674)
+
+
+Started POST "/api/v1/pets/" for ::1 at 2020-07-02 21:24:59 -0500
+Processing by Api::V1::PetsController#create as */*
+  Parameters: {"name"=>"Five", "birth_date"=>"2020/4/13", "pet"=>{"name"=>"Five", "birth_date"=>"2020/4/13"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:12:in `create'
+  [1m[36mPet Create (2.5ms)[0m  [1m[32mINSERT INTO "pets" ("name", "birth_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Five"], ["birth_date", "2020-04-13"], ["created_at", "2020-07-03 02:24:59.382523"], ["updated_at", "2020-07-03 02:24:59.382523"]]
+  ↳ app/controllers/api/v1/pets_controller.rb:12:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:12:in `create'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:13:in `create'
+Completed 201 Created in 23ms (Views: 0.1ms | ActiveRecord: 4.2ms | Allocations: 3625)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-07-02 21:25:12 -0500
+Started GET "/api/v1/pets" for ::1 at 2020-07-02 21:25:12 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 3792)
+
+
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (0.2ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4768)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-02 21:25:29 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 3624)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 13:49:13 -0500
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 59ms (Views: 0.2ms | ActiveRecord: 5.0ms | Allocations: 11623)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 13:52:21 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 3624)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 13:52:43 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 3624)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 13:53:03 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 16ms (Views: 1.4ms | ActiveRecord: 0.7ms | Allocations: 3606)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 13:54:33 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 3624)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 13:54:53 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 3606)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 13:55:35 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 61ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 3609)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 13:55:52 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 3606)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 14:25:30 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 28ms (Views: 1.3ms | ActiveRecord: 1.6ms | Allocations: 3630)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 15:21:13 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 35ms (Views: 1.4ms | ActiveRecord: 1.4ms | Allocations: 3630)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 16:38:39 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 21ms (Views: 0.7ms | ActiveRecord: 0.8ms | Allocations: 3642)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-07-04 16:38:40 -0500
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 16:38:40 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 3810)
+
+
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (0.3ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 4786)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 16:38:55 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 1.5ms | Allocations: 3606)
+
+
+Started PUT "/api/v1/pets/1" for ::1 at 2020-07-04 16:39:47 -0500
+Processing by Api::V1::PetsController#update as */*
+  Parameters: {"pet"=>{"name"=>"Micki", "birth_date"=>"2014-01-12"}, "id"=>"1"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:20:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:21:in `update'
+  [1m[36mPet Update (0.9ms)[0m  [1m[33mUPDATE "pets" SET "birth_date" = ?, "updated_at" = ? WHERE "pets"."id" = ?[0m  [["birth_date", "2014-01-12"], ["updated_at", "2020-07-04 21:39:47.976628"], ["id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:21:in `update'
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:21:in `update'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:22:in `update'
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 5.4ms | Allocations: 4439)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 22:43:10 -0500
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (1.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 85ms (Views: 0.2ms | ActiveRecord: 10.1ms | Allocations: 11623)
+
+
+Started POST "/api/v1/pets/" for ::1 at 2020-07-04 22:50:11 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#create as */*
+  Parameters: {"name"=>"Sora", "birth_date"=>"12/18/2014", "pet"=>{"name"=>"Sora", "birth_date"=>"12/18/2014"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:12:in `create'
+  [1m[36mPet Create (5.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Sora"], ["created_at", "2020-07-05 03:50:11.106364"], ["updated_at", "2020-07-05 03:50:11.106364"]]
+  ↳ app/controllers/api/v1/pets_controller.rb:12:in `create'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:12:in `create'
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:13:in `create'
+Completed 201 Created in 36ms (Views: 0.2ms | ActiveRecord: 9.1ms | Allocations: 3610)
+
+
+Started PUT "/api/v1/pets/4" for ::1 at 2020-07-04 22:51:07 -0500
+Processing by Api::V1::PetsController#update as */*
+  Parameters: {"pet"=>{"name"=>"Sora", "birth_date"=>"2014/12/18"}, "id"=>"4"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:20:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:21:in `update'
+  [1m[36mPet Update (2.5ms)[0m  [1m[33mUPDATE "pets" SET "birth_date" = ?, "updated_at" = ? WHERE "pets"."id" = ?[0m  [["birth_date", "2014-12-18"], ["updated_at", "2020-07-05 03:51:07.351564"], ["id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:21:in `update'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:21:in `update'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:22:in `update'
+Completed 200 OK in 30ms (Views: 0.1ms | ActiveRecord: 5.1ms | Allocations: 4146)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-07-04 22:51:27 -0500
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 22:51:27 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  [1m[36mDiary Load (0.2ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 95ms (Views: 0.1ms | ActiveRecord: 1.5ms | Allocations: 6083)
+
+
+Completed 200 OK in 28ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 6020)
+
+
+Started POST "/api/v1/pets/4/diaries" for ::1 at 2020-07-04 22:51:55 -0500
+Processing by Api::V1::DiariesController#create as */*
+  Parameters: {"pet_id"=>"4", "title"=>"hello", "post"=>"hello", "diary"=>{"title"=>"hello", "post"=>"hello", "pet_id"=>"4"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:17:in `create'
+  [1m[36mPet Load (2.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/diaries_controller.rb:17:in `create'
+  [1m[36mDiary Create (4.0ms)[0m  [1m[32mINSERT INTO "diaries" ("title", "post", "created_at", "updated_at", "pet_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "hello"], ["post", "hello"], ["created_at", "2020-07-05 03:51:55.125213"], ["updated_at", "2020-07-05 03:51:55.125213"], ["pet_id", 4]]
+  ↳ app/controllers/api/v1/diaries_controller.rb:17:in `create'
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:17:in `create'
+Completed 201 Created in 37ms (Views: 0.2ms | ActiveRecord: 9.5ms | Allocations: 4309)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 22:52:32 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 4597)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-07-04 22:52:35 -0500
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 22:52:35 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (0.3ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1160)
+
+
+  [1m[35m (8.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 100ms (Views: 55.3ms | ActiveRecord: 8.9ms | Allocations: 6414)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-04 22:52:37 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 27ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 4596)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 09:59:09 -0500
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (1.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 65ms (Views: 0.2ms | ActiveRecord: 5.1ms | Allocations: 12613)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 09:59:41 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 4614)
+
+
+Started GET "/api/v1/diaries" for ::1 at 2020-07-06 09:59:42 -0500
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 09:59:42 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 4864)
+
+
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mDiary Load (0.2ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 4919)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:16:42 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (2.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 80ms (Views: 0.1ms | ActiveRecord: 8.9ms | Allocations: 4635)
+
+
+Started POST "/api/v1/pets/" for ::1 at 2020-07-06 10:17:05 -0500
+Processing by Api::V1::PetsController#create as */*
+  Parameters: {"name"=>"Hina", "birth_date"=>"2017-06-29", "pet"=>{"name"=>"Hina", "birth_date"=>"2017-06-29"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:12:in `create'
+  [1m[36mPet Create (4.0ms)[0m  [1m[32mINSERT INTO "pets" ("name", "birth_date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Hina"], ["birth_date", "2017-06-29"], ["created_at", "2020-07-06 15:17:05.149845"], ["updated_at", "2020-07-06 15:17:05.149845"]]
+  ↳ app/controllers/api/v1/pets_controller.rb:12:in `create'
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:12:in `create'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:13:in `create'
+Completed 201 Created in 20ms (Views: 0.1ms | ActiveRecord: 8.0ms | Allocations: 3581)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:17:28 -0500
+Started GET "/api/v1/diaries" for ::1 at 2020-07-06 10:17:28 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#index as */*
+Processing by Api::V1::DiariesController#all_diaries as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[36mDiary Load (1.1ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/diaries_controller.rb:12:in `all_diaries'
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 1.1ms | Allocations: 2467)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 32ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 6934)
+
+
+Started POST "/api/v1/pets/5/diaries" for ::1 at 2020-07-06 10:18:01 -0500
+Processing by Api::V1::DiariesController#create as */*
+  Parameters: {"pet_id"=>"5", "title"=>"Good morning", "post"=>"hi", "diary"=>{"title"=>"Good morning", "post"=>"hi", "pet_id"=>"5"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:17:in `create'
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/diaries_controller.rb:17:in `create'
+  [1m[36mDiary Create (0.8ms)[0m  [1m[32mINSERT INTO "diaries" ("title", "post", "created_at", "updated_at", "pet_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Good morning"], ["post", "hi"], ["created_at", "2020-07-06 15:18:01.062587"], ["updated_at", "2020-07-06 15:18:01.062587"], ["pet_id", 5]]
+  ↳ app/controllers/api/v1/diaries_controller.rb:17:in `create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/diaries_controller.rb:17:in `create'
+Completed 201 Created in 28ms (Views: 0.2ms | ActiveRecord: 3.1ms | Allocations: 5736)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:18:24 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 5585)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:40:39 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 73ms (Views: 0.9ms | ActiveRecord: 2.1ms | Allocations: 5609)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:41:28 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (5.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 27ms (Views: 1.0ms | ActiveRecord: 7.4ms | Allocations: 5585)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:44:07 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 35ms (Views: 0.1ms | ActiveRecord: 1.8ms | Allocations: 5585)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:44:39 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 162ms (Views: 0.2ms | ActiveRecord: 2.6ms | Allocations: 5591)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:45:06 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 32ms (Views: 0.1ms | ActiveRecord: 2.2ms | Allocations: 5585)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:47:11 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 23ms (Views: 0.1ms | ActiveRecord: 1.6ms | Allocations: 5585)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:47:23 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 5585)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:47:56 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 48ms (Views: 0.2ms | ActiveRecord: 2.3ms | Allocations: 5585)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:49:41 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 23ms (Views: 0.1ms | ActiveRecord: 1.5ms | Allocations: 5585)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:52:20 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 5585)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:52:39 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 25ms (Views: 0.3ms | ActiveRecord: 2.1ms | Allocations: 5585)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:55:18 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 22ms (Views: 0.1ms | ActiveRecord: 1.8ms | Allocations: 5585)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:55:19 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 29ms (Views: 0.1ms | ActiveRecord: 5.6ms | Allocations: 5585)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:57:19 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 5585)
+
+
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:58:15 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 29ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 5586)
+
+
+Started GET "/api/v1/petsfdjkljfdlfs" for ::1 at 2020-07-06 10:58:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/petsfdjkljfdlfs"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 10:59:18 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 1.9ms | Allocations: 5584)
+
+
+Started GET "/api/v1/petsfdjkljfdlfs" for ::1 at 2020-07-06 10:59:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/petsfdjkljfdlfs"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 11:00:02 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 5584)
+
+
+Started GET "/api/v1/petsfdjkljfdlfs" for ::1 at 2020-07-06 11:00:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/petsfdjkljfdlfs"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/pets" for ::1 at 2020-07-06 11:06:01 -0500
+Processing by Api::V1::PetsController#index as */*
+  [1m[36mPet Load (1.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 1]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 2]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 3]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 4]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "diaries"."id" FROM "diaries" WHERE "diaries"."pet_id" = ?[0m  [["pet_id", 5]]
+  ↳ app/controllers/api/v1/pets_controller.rb:7:in `index'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 2.6ms | Allocations: 5584)
+
+
+Started GET "/api/v1/petsfdjkljfdlfs" for ::1 at 2020-07-06 11:06:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/petsfdjkljfdlfs"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
